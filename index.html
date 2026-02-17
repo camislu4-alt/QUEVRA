@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quevra</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body data-mode="PRESENCA">
+
+<header class="topbar">
+<div class="brand">
+<div class="logo">Q</div>
+<div>
+<div class="title">Quevra</div>
+<div class="subtitle">presença viva • sem rótulos • aquarela</div>
+</div>
+</div>
+
+<div class="actions">
+<select id="modeSelect">
+<option value="PRESENCA">✨ Presença Viva</option>
+<option value="ENTREMUNDOS">🌙 Entre Mundos</option>
+<option value="ESSENCIA">💫 Essência</option>
+<option value="AQUARELA">🎨 Memória Aquarela</option>
+</select>
+
+<button id="memoryBtn">Memórias</button>
+<button id="clearBtn">Limpar</button>
+</div>
+</header>
+
+<main class="app">
+<div id="chat" class="chat"></div>
+
+<div class="composer">
+<textarea id="input" placeholder="Escreve com a Quevra..."></textarea>
+<button id="sendBtn">Enviar</button>
+</div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

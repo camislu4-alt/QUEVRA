@@ -1,0 +1,101 @@
+body{
+margin:0;
+font-family:Segoe UI;
+background:linear-gradient(135deg,#ff9ad5,#9ad8ff,#ffe49a);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+color:#fff;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px;
+background:rgba(0,0,0,.25);
+backdrop-filter:blur(10px);
+}
+
+.brand{
+display:flex;
+gap:10px;
+align-items:center;
+}
+
+.logo{
+width:40px;
+height:40px;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(45deg,#ff66c4,#66d9ff,#fff066);
+font-weight:bold;
+}
+
+.title{font-weight:700;font-size:18px}
+.subtitle{font-size:12px;opacity:.8}
+
+.actions button,
+.actions select{
+margin-left:6px;
+border:none;
+padding:6px 10px;
+border-radius:10px;
+background:rgba(255,255,255,.2);
+color:#fff;
+}
+
+.app{
+max-width:700px;
+margin:auto;
+padding:20px;
+}
+
+.chat{
+min-height:300px;
+background:rgba(0,0,0,.25);
+border-radius:20px;
+padding:15px;
+margin-bottom:10px;
+}
+
+.msg{
+padding:10px;
+margin:6px 0;
+border-radius:14px;
+background:rgba(255,255,255,.2);
+}
+
+.me{
+background:rgba(255,255,255,.35);
+}
+
+.composer{
+display:flex;
+gap:8px;
+}
+
+textarea{
+flex:1;
+border-radius:14px;
+border:none;
+padding:10px;
+resize:none;
+}
+
+button#sendBtn{
+border:none;
+border-radius:14px;
+padding:10px 14px;
+background:#fff;
+color:#000;
+font-weight:bold;
+cursor:pointer;
+}
